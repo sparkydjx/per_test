@@ -111,5 +111,113 @@ export const starWarsQuiz: Quiz = {
         { label: 'The one who made the next generation possible', scores: { obiwan: 3, han: 1 } },
       ],
     },
+    {
+      text: 'The Empire offers a deal. You…',
+      answers: [
+        { label: 'Refuse. Some lines do not move.', scores: { luke: 3, leia: 1 } },
+        { label: 'Use the meeting to gather intel', scores: { leia: 3, obiwan: 1 } },
+        { label: 'Smile, stall, and steal something on the way out', scores: { han: 3, luke: 1 } },
+        { label: 'Listen carefully. Patience reveals the trap.', scores: { obiwan: 3, leia: 1 } },
+      ],
+    },
+    {
+      text: 'A rookie freezes in a firefight. You…',
+      answers: [
+        { label: 'Pull them up and keep them moving', scores: { luke: 3, han: 1 } },
+        { label: 'Give clear orders in one breath', scores: { leia: 3, obiwan: 1 } },
+        { label: 'Cover them while cracking a joke', scores: { han: 3, luke: 1 } },
+        { label: 'Steady their hands. Breathe with them.', scores: { obiwan: 3, leia: 1 } },
+      ],
+    },
+    {
+      text: 'Your relationship to destiny is…',
+      answers: [
+        { label: 'I lean into it, even when it scares me', scores: { luke: 3, obiwan: 1 } },
+        { label: 'I rewrite it with policy and nerve', scores: { leia: 3, han: 1 } },
+        { label: 'I dodge it until it becomes personal', scores: { han: 3, luke: 1 } },
+        { label: 'I serve it quietly and let others take credit', scores: { obiwan: 3, leia: 1 } },
+      ],
+    },
+    {
+      text: 'Pick your battlefield preference:',
+      answers: [
+        { label: 'Open sky. Dogfight energy.', scores: { luke: 3, han: 1 } },
+        { label: 'Command center. Big picture.', scores: { leia: 3, obiwan: 1 } },
+        { label: 'Tight corridors and improvisation', scores: { han: 3, luke: 1 } },
+        { label: 'Shadows, timing, and one decisive strike', scores: { obiwan: 3, leia: 1 } },
+      ],
+    },
+    {
+      text: 'How do you recruit someone reluctant?',
+      answers: [
+        { label: 'Show them who they could become', scores: { luke: 3, obiwan: 1 } },
+        { label: 'Appeal to duty and the people counting on us', scores: { leia: 3, luke: 1 } },
+        { label: 'Make it sound like a job with benefits', scores: { han: 3, leia: 1 } },
+        { label: 'Wait. Then ask once, when they are ready.', scores: { obiwan: 3, han: 1 } },
+      ],
+    },
+    {
+      text: 'A plan fails in public. You…',
+      answers: [
+        { label: 'Own it and try a braver angle', scores: { luke: 3, han: 1 } },
+        { label: 'Stabilize the room, then revise', scores: { leia: 3, obiwan: 1 } },
+        { label: 'Blame the odds, then invent plan B', scores: { han: 3, luke: 1 } },
+        { label: 'Absorb the heat so the team can regroup', scores: { obiwan: 3, leia: 1 } },
+      ],
+    },
+    {
+      text: 'What do you carry that nobody sees?',
+      answers: [
+        { label: 'Hope that borders on stubbornness', scores: { luke: 3, obiwan: 1 } },
+        { label: 'The weight of every name on the list', scores: { leia: 3, obiwan: 1 } },
+        { label: 'A soft heart under the swagger', scores: { han: 3, luke: 1 } },
+        { label: 'Old grief braided into patience', scores: { obiwan: 3, leia: 1 } },
+      ],
+    },
+    {
+      text: 'Your ideal alliance partner…',
+      answers: [
+        { label: 'Believes the light can still win', scores: { luke: 3, leia: 1 } },
+        { label: 'Can run a briefing and a battle', scores: { leia: 3, obiwan: 1 } },
+        { label: 'Can fly, fight, and leave on short notice', scores: { han: 3, luke: 1 } },
+        { label: 'Knows when not to draw the blade', scores: { obiwan: 3, leia: 1 } },
+      ],
+    },
+    {
+      text: 'In a cantina full of strangers, you…',
+      answers: [
+        { label: 'Look for the person who needs help', scores: { luke: 3, leia: 1 } },
+        { label: 'Map the exits and the power seats', scores: { leia: 3, obiwan: 1 } },
+        { label: 'Make a deal before the music ends', scores: { han: 3, luke: 1 } },
+        { label: 'Watch quietly until the truth shows itself', scores: { obiwan: 3, han: 1 } },
+      ],
+    },
+    {
+      text: 'Training versus instinct — you trust…',
+      answers: [
+        { label: 'Instinct first, then polish it', scores: { luke: 3, han: 1 } },
+        { label: 'Training that serves a clear mission', scores: { leia: 3, obiwan: 1 } },
+        { label: 'Whatever gets us out alive', scores: { han: 3, luke: 1 } },
+        { label: 'Discipline that outlasts emotion', scores: { obiwan: 3, leia: 1 } },
+      ],
+    },
+    {
+      text: 'Someone you love joins the wrong side. You…',
+      answers: [
+        { label: 'Try to bring them home', scores: { luke: 3, obiwan: 1 } },
+        { label: 'Protect the cause, even if it breaks you', scores: { leia: 3, obiwan: 1 } },
+        { label: 'Go after them personally, rules optional', scores: { han: 3, luke: 1 } },
+        { label: 'Mourn in private and counsel the living', scores: { obiwan: 3, leia: 1 } },
+      ],
+    },
+    {
+      text: 'What does “winning” mean to you?',
+      answers: [
+        { label: 'People get to hope again', scores: { luke: 3, leia: 1 } },
+        { label: 'The republic stands and the work continues', scores: { leia: 3, obiwan: 1 } },
+        { label: 'My people make it out — preferably paid', scores: { han: 3, luke: 1 } },
+        { label: 'The next generation inherits a quieter sky', scores: { obiwan: 3, leia: 1 } },
+      ],
+    },
   ],
 }

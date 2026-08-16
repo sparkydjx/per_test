@@ -123,5 +123,113 @@ export const officeQuiz: Quiz = {
         { label: 'Did I stutter.', scores: { stanley: 3, angela: 1 } },
       ],
     },
+    {
+      text: 'Corporate is visiting. You…',
+      answers: [
+        { label: 'Look busy in a charming, unbothered way', scores: { jim: 3, pam: 1 } },
+        { label: 'Prepare a briefing binder and a salute', scores: { dwight: 3, angela: 1 } },
+        { label: 'Plan a welcome speech and a gift basket', scores: { michael: 3, pam: 1 } },
+        { label: 'Pretend I am on a call that never ends', scores: { stanley: 3, jim: 1 } },
+      ],
+    },
+    {
+      text: 'Someone microwaves fish. Your response:',
+      answers: [
+        { label: 'Deadpan commentary from two desks away', scores: { jim: 3, stanley: 1 } },
+        { label: 'Cite the kitchen policy. Loudly.', scores: { angela: 3, dwight: 1 } },
+        { label: 'Make it a teachable moment about respect', scores: { michael: 3, pam: 1 } },
+        { label: 'Open a window and refuse to speak until 5', scores: { stanley: 3, angela: 1 } },
+      ],
+    },
+    {
+      text: 'Your approach to performance reviews:',
+      answers: [
+        { label: 'Keep it light. Survive. Leave early if possible.', scores: { jim: 3, stanley: 1 } },
+        { label: 'Bring charts, goals, and a counter-offer', scores: { dwight: 3, angela: 1 } },
+        { label: 'Ask if we are friends. Then cry a little.', scores: { michael: 3, pam: 1 } },
+        { label: 'Be honest, careful, and slightly terrified', scores: { pam: 3, angela: 1 } },
+      ],
+    },
+    {
+      text: 'The office party theme is terrible. You…',
+      answers: [
+        { label: 'Commit ironically and document everything', scores: { jim: 3, pam: 1 } },
+        { label: 'Improve the theme with superior logistics', scores: { dwight: 3, angela: 1 } },
+        { label: 'Double down. Make it emotional.', scores: { michael: 3, pam: 1 } },
+        { label: 'Attend for fifteen minutes. Tops.', scores: { stanley: 3, angela: 1 } },
+      ],
+    },
+    {
+      text: 'A new hire asks how things really work here.',
+      answers: [
+        { label: 'Give them the honest tour and one warning', scores: { jim: 3, pam: 1 } },
+        { label: 'Hand them the employee handbook. Annotated.', scores: { dwight: 3, angela: 1 } },
+        { label: 'Welcome them to the family. Hard.', scores: { michael: 3, pam: 1 } },
+        { label: 'Tell them to keep their head down', scores: { stanley: 3, jim: 1 } },
+      ],
+    },
+    {
+      text: 'Your ideal lunch situation:',
+      answers: [
+        { label: 'Same deli, same booth, good company', scores: { jim: 3, pam: 1 } },
+        { label: 'Packed meal, timed break, no surprises', scores: { dwight: 3, angela: 1 } },
+        { label: 'Group lunch. Conversation is the point.', scores: { michael: 3, pam: 1 } },
+        { label: 'Alone. Preferably in the car.', scores: { stanley: 3, angela: 1 } },
+      ],
+    },
+    {
+      text: 'When sales numbers are down, you…',
+      answers: [
+        { label: 'Do enough, then wait for the storm to pass', scores: { jim: 3, stanley: 1 } },
+        { label: 'Launch a tactical blitz with incentives', scores: { dwight: 3, michael: 1 } },
+        { label: 'Motivate the room with a speech and snacks', scores: { michael: 3, pam: 1 } },
+        { label: 'Protect accounting standards at all costs', scores: { angela: 3, stanley: 1 } },
+      ],
+    },
+    {
+      text: 'You overhear gossip by the copier. You…',
+      answers: [
+        { label: 'Listen for the joke, not the drama', scores: { jim: 3, stanley: 1 } },
+        { label: 'Report relevant misconduct immediately', scores: { dwight: 3, angela: 1 } },
+        { label: 'Feel left out, then insert yourself', scores: { michael: 3, pam: 1 } },
+        { label: 'Judge silently and resume work', scores: { angela: 3, stanley: 1 } },
+      ],
+    },
+    {
+      text: 'Friday at 4:47 p.m. looks like…',
+      answers: [
+        { label: 'One more chat, then freedom', scores: { jim: 3, pam: 1 } },
+        { label: 'Finishing tomorrow’s work today', scores: { dwight: 3, angela: 1 } },
+        { label: 'Trying to start a hangout nobody asked for', scores: { michael: 3, pam: 1 } },
+        { label: 'Coat on. Engine running. Gone.', scores: { stanley: 3, jim: 1 } },
+      ],
+    },
+    {
+      text: 'Your relationship with HR is…',
+      answers: [
+        { label: 'Friendly distance. We both know why.', scores: { jim: 3, pam: 1 } },
+        { label: 'Frequent. Productive. Occasionally armed.', scores: { dwight: 3, angela: 1 } },
+        { label: 'Emotional. They are basically therapists.', scores: { michael: 3, pam: 1 } },
+        { label: 'Nonexistent, which is ideal', scores: { stanley: 3, angela: 1 } },
+      ],
+    },
+    {
+      text: 'If you had to run Dundie night, you would…',
+      answers: [
+        { label: 'Write jokes that land without cruelty', scores: { jim: 3, pam: 1 } },
+        { label: 'Create categories, criteria, and security', scores: { dwight: 3, angela: 1 } },
+        { label: 'Make every award a love letter', scores: { michael: 3, pam: 1 } },
+        { label: 'Keep it short and leave before karaoke', scores: { stanley: 3, angela: 1 } },
+      ],
+    },
+    {
+      text: 'What do you want from this job, really?',
+      answers: [
+        { label: 'A decent day and a person who gets me', scores: { jim: 3, pam: 1 } },
+        { label: 'Authority, mastery, and a clear ladder', scores: { dwight: 3, angela: 1 } },
+        { label: 'To matter to these people', scores: { michael: 3, pam: 1 } },
+        { label: 'A paycheck and an undisturbed afternoon', scores: { stanley: 3, angela: 1 } },
+      ],
+    },
   ],
 }
