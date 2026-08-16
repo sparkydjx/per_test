@@ -200,6 +200,7 @@ function renderResult(quiz: Quiz, ranked: RankedMatch[]): void {
         <p class="eyebrow">${escapeHtml(quiz.resultLabel)}</p>
         <h2>${escapeHtml(winner.name)}</h2>
         <p class="result-role">${escapeHtml(winner.role)} · ${winner.percent}%</p>
+        <p class="result-profile-label">Your profile</p>
         <p class="result-blurb">${escapeHtml(winner.blurb)}</p>
         <div class="result-actions">
           <button type="button" class="primary" id="retake">Retake this quiz</button>

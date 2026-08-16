@@ -288,6 +288,17 @@ button {
 .result-blurb {
   color: var(--text) !important;
   margin: 12px 0 20px !important;
+  line-height: 1.55;
+  max-width: 42rem;
+  white-space: normal;
+}
+
+.result-profile-label {
+  margin: 14px 0 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 .result-actions {
