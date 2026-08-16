@@ -1,0 +1,17 @@
+{
+  "name": "per_test",
+  "install": "npm ci",
+  "terminals": [
+    {
+      "name": "dev",
+      "command": "npm run dev -- --host 0.0.0.0 --port 5173",
+      "description": "Vite PWA dev server for testing on the cloud desktop and from mobile."
+    }
+  ],
+  "ports": [
+    {
+      "name": "PWA",
+      "port": 5173
+    }
+  ]
+}
