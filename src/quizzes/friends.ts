@@ -52,7 +52,7 @@ export const friendsQuiz: Quiz = {
   ],
   questions: [
     {
-      text: "An unexpected free day appears. You most often…",
+      text: "You suddenly have a free Saturday. What do you actually do?",
       answers: [
         {
           label: "Reset your look and surroundings",
@@ -92,7 +92,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "A friend is spiraling. Your first move is…",
+      text: "A friend is freaking out. What is your first move?",
       answers: [
         {
           label: "Comfort them and help them feel put-together again",
@@ -132,7 +132,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "In a friend group, you usually contribute…",
+      text: "In your friend group, what do you usually bring?",
       answers: [
         {
           label: "Taste and a higher bar for how things look",
@@ -172,7 +172,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "Work, for you, is mostly…",
+      text: "Be honest: what is work to you?",
       answers: [
         {
           label: "A stage for becoming someone new",
@@ -212,7 +212,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "Someone leaves a mess in your shared space. You…",
+      text: "Someone leaves a mess in your apartment. What do you do?",
       answers: [
         {
           label: "Notice it immediately and judge it quietly",
@@ -252,7 +252,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "In dating, you tend to…",
+      text: "When it comes to dating, what do you usually do?",
       answers: [
         {
           label: "Follow chemistry and figure out the rest later",
@@ -292,7 +292,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "What frustrates you most in close relationships?",
+      text: "In close relationships, what frustrates you most?",
       answers: [
         {
           label: "Being treated as less serious than you are",
@@ -332,7 +332,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "Which group-chat energy is most like you?",
+      text: "Which group-chat style is most like you?",
       answers: [
         {
           label: "We can always start over",
@@ -372,7 +372,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "A holiday meal at your place tends to mean…",
+      text: "Thanksgiving (or a big holiday meal) at your place usually means what?",
       answers: [
         {
           label: "Looking good and surviving a near-disaster story",
@@ -412,7 +412,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "Your living space usually feels…",
+      text: "What does your apartment usually feel like?",
       answers: [
         {
           label: "Stylish, unfinished, and full of potential",
@@ -452,7 +452,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "You unexpectedly see an ex. You…",
+      text: "You unexpectedly run into an ex. What do you do?",
       answers: [
         {
           label: "Make sure you look composed and in control",
@@ -492,7 +492,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "In a favorite hangout, you claim the seat that lets you…",
+      text: "At your favorite hangout, which seat do you take and why?",
       answers: [
         {
           label: "Watch people without being the center",
@@ -532,7 +532,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "Someone gets a fact or pronunciation wrong. You…",
+      text: "Someone gets a fact wrong out loud. What do you do?",
       answers: [
         {
           label: "Let it go unless it touches something you care about",
@@ -572,7 +572,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "With roommates, conflict usually looks like…",
+      text: "When you and your roommates argue, what does it look like?",
       answers: [
         {
           label: "A dramatic exit, then a sincere return",
@@ -612,7 +612,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "At a surprise gathering, your role is usually…",
+      text: "There is a surprise party. What is your role?",
       answers: [
         {
           label: "Main-character energy, even if you helped plan it",
@@ -652,7 +652,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "When you are trusted with a secret, you…",
+      text: "Someone trusts you with a secret. What do you do with it?",
       answers: [
         {
           label: "Hold it for the moment it should land",
@@ -692,7 +692,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "Your ideal trip is…",
+      text: "What does your ideal trip look like?",
       answers: [
         {
           label: "A stylish city with room to reinvent yourself",
@@ -732,7 +732,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "When you are wrong, you…",
+      text: "When you realize you are wrong, what do you do?",
       answers: [
         {
           label: "Need a minute, then own it cleanly",
@@ -772,7 +772,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "Late-night talks with a close friend tend to become…",
+      text: "Late-night talks with a close friend usually turn into what?",
       answers: [
         {
           label: "Feelings, future plans, and how things look from here",
@@ -812,7 +812,7 @@ export const friendsQuiz: Quiz = {
       ],
     },
     {
-      text: "What do you hope your friends remember?",
+      text: "What do you hope your friends remember about you?",
       answers: [
         {
           label: "That you kept becoming braver in public",

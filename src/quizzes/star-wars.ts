@@ -40,7 +40,7 @@ export const starWarsQuiz: Quiz = {
   ],
   questions: [
     {
-      text: "A carefully made plan collapses mid-run. You…",
+      text: "The mission plan just fell apart. What do you do?",
       answers: [
         {
           label: "Trust your read of the moment and keep going",
@@ -81,7 +81,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "What most often pulls you into a conflict you did not start?",
+      text: "What usually pulls you into a fight you did not start?",
       answers: [
         {
           label: "Someone with less power than the problem",
@@ -122,7 +122,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "On a high-stakes trip, you prefer to be…",
+      text: "On a dangerous trip, where do you want to be?",
       answers: [
         {
           label: "At the controls, watching the horizon",
@@ -163,7 +163,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "Facing a long-term rival, you usually…",
+      text: "You have a long-term rival. How do you deal with them?",
       answers: [
         {
           label: "Leave room for them to change course",
@@ -204,7 +204,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "Which response sounds most like you under pressure?",
+      text: "Things are going wrong. Which response sounds most like you?",
       answers: [
         {
           label: "This might still work if we trust it",
@@ -245,7 +245,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "Downtime in a remote place looks like…",
+      text: "You have downtime on a remote world. How do you spend it?",
       answers: [
         {
           label: "Practice until the light fades",
@@ -286,7 +286,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "Your hardest private habit is…",
+      text: "What is the hardest habit you hide from other people?",
       answers: [
         {
           label: "Attaching quickly, then trying to save everyone",
@@ -327,7 +327,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "At the end of a long fight, you most want to have been…",
+      text: "When the long fight is over, who do you want to have been?",
       answers: [
         {
           label: "The one who kept believing anyway",
@@ -368,7 +368,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "An opposing power offers terms. You…",
+      text: "The Empire offers you a deal. What do you do?",
       answers: [
         {
           label: "Refuse; some lines do not move",
@@ -409,7 +409,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "A less experienced teammate freezes. You…",
+      text: "A newer teammate freezes in a fight. What do you do?",
       answers: [
         {
           label: "Get them moving with you",
@@ -450,7 +450,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "How do you relate to a path that feels “meant” for you?",
+      text: "A path feels “meant” for you. How do you treat that?",
       answers: [
         {
           label: "Lean into it, even when it scares you",
@@ -532,7 +532,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "How do you bring in someone reluctant?",
+      text: "How do you convince a reluctant person to join you?",
       answers: [
         {
           label: "Show them who they could become",
@@ -573,7 +573,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "A plan fails publicly. You…",
+      text: "Your plan fails in front of everyone. What do you do?",
       answers: [
         {
           label: "Own it and try a braver angle",
@@ -655,7 +655,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "Your best collaborator usually…",
+      text: "What kind of partner brings out your best?",
       answers: [
         {
           label: "Believes a better ending is still possible",
@@ -696,7 +696,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "In a crowded room of strangers, you…",
+      text: "You walk into a crowded cantina of strangers. What do you do?",
       answers: [
         {
           label: "Look for the person who needs help",
@@ -737,7 +737,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "Between preparation and instinct, you trust…",
+      text: "When it counts, do you trust preparation or instinct more?",
       answers: [
         {
           label: "Instinct first, then refine it",
@@ -778,7 +778,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "Someone you love joins the wrong side. You…",
+      text: "Someone you love joins the wrong side. What do you do?",
       answers: [
         {
           label: "Try to bring them home",
@@ -819,7 +819,7 @@ export const starWarsQuiz: Quiz = {
       ],
     },
     {
-      text: "What does winning mean to you?",
+      text: "For you, what does winning actually mean?",
       answers: [
         {
           label: "People get room to hope again",

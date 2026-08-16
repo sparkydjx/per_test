@@ -52,7 +52,7 @@ export const officeQuiz: Quiz = {
   ],
   questions: [
     {
-      text: "A long meeting is covering ground you already understand. You…",
+      text: "Okay, real talk: the meeting could have been an email. What are you doing in there?",
       answers: [
         {
           label: "Trade a look with someone who also gets it",
@@ -92,7 +92,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "There is an optional celebration down the hall. You…",
+      text: "There is cake in the conference room and nobody is forcing you to go. What do you do?",
       answers: [
         {
           label: "Stop by for the food and the people-watching",
@@ -132,7 +132,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "What does your workspace usually signal?",
+      text: "If I walked by your desk right now, what would it say about you?",
       answers: [
         {
           label: "A few personal details and a private joke or two",
@@ -172,7 +172,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "Tension breaks out in an open room. Your instinct is to…",
+      text: "Two coworkers are arguing in the open office. What is your move?",
       answers: [
         {
           label: "Watch, then land one precise comment",
@@ -212,7 +212,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "What are you unusually good at noticing at work?",
+      text: "Be honest with me — what are you actually good at noticing at work?",
       answers: [
         {
           label: "The mood of the room without joining the noise",
@@ -252,7 +252,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "A joke at someone else’s expense is forming. You…",
+      text: "Someone is about to prank a coworker. Where do you fit in?",
       answers: [
         {
           label: "Help design it if the timing is right",
@@ -292,7 +292,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "On the commute home, your mind usually lands on…",
+      text: "You are driving home. What is stuck in your head?",
       answers: [
         {
           label: "One person who made the day feel less flat",
@@ -332,38 +332,38 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "Which workplace value feels most like you?",
+      text: "If this office had one rule that sounded like you, which is it?",
       answers: [
         {
-          label: "Keep things light when everyone else escalates",
+          label: "Do not make this weirder than it already is",
           scores: {
             jim: 3,
             stanley: 1,
           },
         },
         {
-          label: "Take the role seriously, even if others do not",
+          label: "Take the job seriously, even if nobody else does",
           scores: {
             dwight: 3,
             angela: 1,
           },
         },
         {
-          label: "Make the team feel like it matters personally",
+          label: "We are a family, and families care about each other",
           scores: {
             michael: 3,
             dwight: 1,
           },
         },
         {
-          label: "Say what you mean once, then move on",
+          label: "Say it once. Clearly. Then we are done.",
           scores: {
             stanley: 3,
             angela: 1,
           },
         },
         {
-          label: "Keep standards high even when nobody is watching",
+          label: "Standards matter, even when no one is watching",
           scores: {
             angela: 3,
             dwight: 1,
@@ -372,7 +372,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "Leadership from above is visiting your floor. You…",
+      text: "Corporate is coming to our floor today. How do you handle that?",
       answers: [
         {
           label: "Look competent without looking eager",
@@ -412,7 +412,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "Someone violates a shared kitchen norm. You…",
+      text: "Somebody microwaved fish again. What do you do?",
       answers: [
         {
           label: "Comment sideways and keep working",
@@ -452,7 +452,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "Feedback season arrives. You handle it by…",
+      text: "It is performance review time. How do you show up?",
       answers: [
         {
           label: "Keeping it breezy and getting out cleanly",
@@ -492,7 +492,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "A group event has a theme you dislike. You…",
+      text: "We planned a party with a theme you hate. Now what?",
       answers: [
         {
           label: "Play along with just enough irony",
@@ -532,7 +532,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "Someone new asks what this place is really like. You…",
+      text: "A new hire asks, “What is this place really like?” What do you tell them?",
       answers: [
         {
           label: "Give a honest tour with one practical warning",
@@ -572,7 +572,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "Your preferred break looks like…",
+      text: "Lunch break. What does a good one look like for you?",
       answers: [
         {
           label: "A familiar spot with someone easy to talk to",
@@ -612,7 +612,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "Results are slipping. Your first move is…",
+      text: "Sales numbers are down and people are stressed. What do you do first?",
       answers: [
         {
           label: "Do what is needed, then wait for the weather to change",
@@ -652,7 +652,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "You overhear office gossip. You…",
+      text: "You catch gossip by the copier. What happens next?",
       answers: [
         {
           label: "Stay for the humor, not the politics",
@@ -692,7 +692,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "The week is almost over. In the last half hour you…",
+      text: "It is Friday at 4:47. What are you doing?",
       answers: [
         {
           label: "Trade one last easy conversation, then leave",
@@ -732,7 +732,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "How do you relate to people who manage conflict officially?",
+      text: "How do you deal with HR / the people who handle conflict officially?",
       answers: [
         {
           label: "Polite distance; you both understand the arrangement",
@@ -772,7 +772,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "If you had to host an awards night for the team, you would…",
+      text: "If you had to run awards night for the branch, how would you do it?",
       answers: [
         {
           label: "Write jokes that land without punching down",
@@ -812,7 +812,7 @@ export const officeQuiz: Quiz = {
       ],
     },
     {
-      text: "What do you actually want from work?",
+      text: "Deep question, guys: what do you actually want from this job?",
       answers: [
         {
           label: "A tolerable day and someone who gets your humor",

@@ -52,7 +52,7 @@ export const parksAndRecreationQuiz: Quiz = {
   ],
   questions: [
     {
-      text: "Your workplace descends into chaos. You…",
+      text: "City Hall is chaos again. What do you do first?",
       answers: [
         {
           label: "Start assigning roles before anyone asks",
@@ -92,7 +92,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "An open Saturday is yours. You are most likely to…",
+      text: "You have a free Saturday in town. How do you spend it?",
       answers: [
         {
           label: "Volunteer for something that helps the town",
@@ -132,7 +132,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "Your desk or workspace usually looks…",
+      text: "Look at your desk. What does it usually look like?",
       answers: [
         {
           label: "Personal, optimistic, and a little overcrowded with meaning",
@@ -172,7 +172,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "A friend is unraveling. Your first impulse is…",
+      text: "A friend is falling apart. What is your first move?",
       answers: [
         {
           label: "Organize support until they feel celebrated again",
@@ -212,7 +212,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "How do you usually approach assigned work?",
+      text: "How do you usually handle your actual assigned work?",
       answers: [
         {
           label: "Overdeliver because the mission feels personal",
@@ -252,7 +252,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "A public meeting gets heated. You…",
+      text: "A town hall meeting gets angry. What do you do?",
       answers: [
         {
           label: "Win the room with preparation and sincerity",
@@ -292,7 +292,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "What drains your patience fastest?",
+      text: "What annoys you fastest at work?",
       answers: [
         {
           label: "People who will not care about their community",
@@ -332,7 +332,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "Which personal motto fits how you move through a week?",
+      text: "Which motto actually matches how you live your week?",
       answers: [
         {
           label: "Aim high and mean it",
@@ -372,7 +372,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "An ugly empty lot needs a future. You…",
+      text: "An empty lot needs a new purpose. What is your plan?",
       answers: [
         {
           label: "Build a plan, a coalition, and a vision",
@@ -412,7 +412,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "Morning fuel, for you, is mostly about…",
+      text: "What matters most to you about breakfast or morning fuel?",
       answers: [
         {
           label: "Comfort food that feels like affection",
@@ -452,7 +452,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "At a local festival, you naturally become…",
+      text: "At a local festival, what role do you naturally take?",
       answers: [
         {
           label: "The person making sure people feel welcomed",
@@ -492,7 +492,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "Someone asks you to stay late. You…",
+      text: "Someone asks you to stay late. What do you say?",
       answers: [
         {
           label: "Say yes and arrive with a plan already forming",
@@ -532,7 +532,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "A weak idea appears in a meeting. You…",
+      text: "A bad idea comes up in a meeting. How do you handle it?",
       answers: [
         {
           label: "Redirect it into something useful without crushing anyone",
@@ -572,7 +572,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "How do you show care at work?",
+      text: "How do you show people you care at work?",
       answers: [
         {
           label: "Specific compliments, calendars, and thoughtful extras",
@@ -612,7 +612,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "A famous person visits your town. You…",
+      text: "A celebrity visits your town. What do you do?",
       answers: [
         {
           label: "Overprepare with local context and hospitality",
@@ -652,7 +652,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "Which working style feels closest to yours?",
+      text: "Which working style is most like yours day to day?",
       answers: [
         {
           label: "Enthusiastic, loyal, and slightly overcommitted",
@@ -692,7 +692,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "Budgets get cut. Your reaction is…",
+      text: "Your department’s budget just got cut. What is your reaction?",
       answers: [
         {
           label: "Fight for the work with evidence and heart",
@@ -732,7 +732,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "After a long day, you recharge by…",
+      text: "After a long day, how do you recharge?",
       answers: [
         {
           label: "Planning tomorrow with someone who shares the mission",
@@ -772,7 +772,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "Someone talks down your hometown. You…",
+      text: "Someone insults your hometown. How do you respond?",
       answers: [
         {
           label: "Defend it with specifics and pride",
@@ -812,7 +812,7 @@ export const parksAndRecreationQuiz: Quiz = {
       ],
     },
     {
-      text: "What do you want to be known for later?",
+      text: "Years from now, what do you want to be known for?",
       answers: [
         {
           label: "Making the place better for people",

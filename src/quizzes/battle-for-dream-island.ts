@@ -88,7 +88,7 @@ export const battleForDreamIslandQuiz: Quiz = {
   ],
   questions: [
     {
-      text: "A high-stakes moment is about to start. Where does your attention go first?",
+      text: "The contest is about to start. What are you focused on first?",
       answers: [
         {
           label: "Getting ahead before anyone else settles in",
@@ -130,7 +130,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "Someone narrowly beats you. Afterward you…",
+      text: "Someone barely beats you. What do you do afterward?",
       answers: [
         {
           label: "Replay it until the next chance feels inevitable",
@@ -174,7 +174,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "When groups form quickly, you drift toward…",
+      text: "Teams are forming fast. Who do you join?",
       answers: [
         {
           label: "Whoever improves your odds the fastest",
@@ -218,7 +218,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "You are shut out of something you wanted. Walking away, you feel…",
+      text: "You get voted out unfairly. What is going through your head as you leave?",
       answers: [
         {
           label: "Ready to return louder next time",
@@ -262,7 +262,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "Between big moments, your default mode is…",
+      text: "Between contests, how do you usually spend your time?",
       answers: [
         {
           label: "Staying sharp so nobody catches you flat-footed",
@@ -305,7 +305,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "A teammate freezes when it counts. You…",
+      text: "A teammate freezes mid-challenge. What do you do?",
       answers: [
         {
           label: "Snap them into motion and soften later",
@@ -349,7 +349,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "Which kind of task drains you fastest?",
+      text: "Which kind of challenge drains you the most?",
       answers: [
         {
           label: "Ones that punish people who act early",
@@ -392,7 +392,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "If a major prize became yours tomorrow, you would mostly…",
+      text: "If you won the big prize tomorrow, what would you do with it?",
       answers: [
         {
           label: "Enjoy being proven right about who deserved it",
@@ -436,7 +436,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "Someone in charge starts talking down to the room. You…",
+      text: "The host starts talking down to everyone. How do you react?",
       answers: [
         {
           label: "Push back the moment it gets personal",
@@ -479,7 +479,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "Under pressure, your instincts lean toward…",
+      text: "When the pressure spikes, what do you do?",
       answers: [
         {
           label: "Pushing harder before the window closes",
@@ -523,7 +523,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "Someone uses a nickname you never agreed to. You…",
+      text: "Someone gives you a nickname you hate. What do you do?",
       answers: [
         {
           label: "Shut it down immediately",
@@ -567,7 +567,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "Nobody wants to decide the next move. You…",
+      text: "Nobody will pick the next plan. What do you do?",
       answers: [
         {
           label: "Take it and tell people exactly what to do",
@@ -611,7 +611,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "Something breaks at the worst time. You…",
+      text: "Something important breaks at the worst moment. What is your move?",
       answers: [
         {
           label: "Treat the scramble like another race",
@@ -655,7 +655,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "The partner who brings out your best usually…",
+      text: "What kind of partner helps you do your best?",
       answers: [
         {
           label: "Does not flinch when you get intense",
@@ -698,7 +698,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "Waiting for a decision that affects you, inside you are…",
+      text: "Elimination is about to be announced. How are you feeling?",
       answers: [
         {
           label: "Braced and ready to argue with the outcome",
@@ -742,7 +742,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "You notice an advantage nobody else has spotted. You…",
+      text: "You find a hidden advantage. What do you do with it?",
       answers: [
         {
           label: "Use it now, before the window closes",
@@ -786,7 +786,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "People keep underestimating you. You…",
+      text: "People keep underestimating you. How do you handle that?",
       answers: [
         {
           label: "Make the correction visible",
@@ -829,7 +829,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "Stuck on the sidelines for a while, you would…",
+      text: "You are stuck on the sidelines for a while. What do you do?",
       answers: [
         {
           label: "Treat it as training for the return",
@@ -873,7 +873,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "One teammate is clearly coasting. You…",
+      text: "One teammate is clearly not helping. What do you do?",
       answers: [
         {
           label: "Cover their share and do not hide the resentment",
@@ -917,7 +917,7 @@ export const battleForDreamIslandQuiz: Quiz = {
       ],
     },
     {
-      text: "When a long chapter ends, you hope people say you…",
+      text: "When the season ends, what do you hope people say about you?",
       answers: [
         {
           label: "Never coasted when first place was possible",

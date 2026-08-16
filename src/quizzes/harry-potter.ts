@@ -40,7 +40,7 @@ export const harryPotterQuiz: Quiz = {
   ],
   questions: [
     {
-      text: "Something you want is behind an obstacle. You usually…",
+      text: "The Sorting Hat asks: there is something you want behind a locked door. What do you do?",
       answers: [
         {
           label: "Push through and sort the details afterward",
@@ -81,7 +81,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "When resources are limited, what do you guard first?",
+      text: "Tell me truly — when there is not enough to go around, what do you protect first?",
       answers: [
         {
           label: "The people who would do the same for you",
@@ -121,7 +121,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "In a group assignment, you naturally become the person who…",
+      text: "In a group task, which part do you take without being asked?",
       answers: [
         {
           label: "Takes the exposed, high-pressure role",
@@ -162,7 +162,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "Which kind of win feels most satisfying?",
+      text: "I sense many kinds of victory in you. Which one feels best when it arrives?",
       answers: [
         {
           label: "The one that seemed impossible the day before",
@@ -203,7 +203,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "A story about you starts circulating. You…",
+      text: "A rumor about you is spreading through the castle. How do you answer it?",
       answers: [
         {
           label: "Walk in and force the conversation into the open",
@@ -244,7 +244,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "Where do you think most clearly?",
+      text: "Where do you go when you need to think clearly?",
       answers: [
         {
           label: "Somewhere elevated, with weather and distance",
@@ -284,7 +284,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "Which trait would feel worst to fake?",
+      text: "Which quality would feel worst to pretend you have?",
       answers: [
         {
           label: "Willingness to act when it is uncomfortable",
@@ -325,7 +325,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "Something urgent needs someone at an inconvenient hour. You go because…",
+      text: "Dumbledore leans in: why would you go help at midnight if the castle needed you?",
       answers: [
         {
           label: "If not you, then who?",
@@ -365,7 +365,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "Someone on the edge of the group is being ignored. You…",
+      text: "A classmate is being left out. What do you do?",
       answers: [
         {
           label: "Pull them into the action while it is moving",
@@ -406,7 +406,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "Before a high-stakes evaluation, you prepare by…",
+      text: "Exams are coming. How do you prepare?",
       answers: [
         {
           label: "Relying on nerve and shared last-minute notes",
@@ -447,7 +447,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "You find information that is restricted for a reason. You…",
+      text: "You find a restricted book. What then?",
       answers: [
         {
           label: "Open it; some knowledge is worth the risk",
@@ -488,7 +488,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "In a competitive team sport, your natural role is…",
+      text: "On a Quidditch pitch — or any hard contest — what is your natural job?",
       answers: [
         {
           label: "Taking the decisive risk when it counts",
@@ -529,7 +529,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "An authority figure is unfair. You…",
+      text: "A professor is being unfair. How do you respond?",
       answers: [
         {
           label: "Challenge them while people are watching",
@@ -569,38 +569,38 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "Which image feels closest to how you handle pressure?",
+      text: "Dumbledore would ask: when everything goes wrong at once, what do you do?",
       answers: [
         {
-          label: "Rising again after a costly fall",
+          label: "Get back up and try again, even if it costs me",
           scores: {
             gryffindor: 3,
             hufflepuff: 1,
           },
         },
         {
-          label: "Waiting, then striking with precision",
+          label: "Wait, watch, then make one precise move",
           scores: {
             slytherin: 3,
             ravenclaw: 1,
           },
         },
         {
-          label: "Climbing high enough to see the pattern",
+          label: "Step back until I understand the whole pattern",
           scores: {
             ravenclaw: 3,
             slytherin: 1,
           },
         },
         {
-          label: "Holding ground protectively for your people",
+          label: "Protect the people around me first",
           scores: {
             hufflepuff: 3,
             gryffindor: 1,
           },
         },
         {
-          label: "Adapting without losing your center",
+          label: "Adjust the plan without losing who I am",
           scores: {
             ravenclaw: 2,
             hufflepuff: 2,
@@ -610,7 +610,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "Friends usually count on you to be…",
+      text: "What do your friends rely on you for?",
       answers: [
         {
           label: "First through the difficult door",
@@ -651,7 +651,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "A shortcut appears that feels slightly wrong. You…",
+      text: "A shortcut appears, but it feels slightly wrong. Do you take it?",
       answers: [
         {
           label: "Take it if it helps someone faster",
@@ -692,7 +692,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "How do you want to be remembered by a community you lived in?",
+      text: "Dumbledore smiles and asks: when Hogwarts remembers you, what should they say?",
       answers: [
         {
           label: "As someone who acted when it counted",
@@ -733,7 +733,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "You are offered influence with conditions attached. You…",
+      text: "Power is offered to you — with strings attached. What do you do?",
       answers: [
         {
           label: "Accept it if it lets you protect people",
@@ -774,7 +774,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "Late at night in a shared living space, you are usually…",
+      text: "It is late in the common room. What are you doing?",
       answers: [
         {
           label: "Planning tomorrow’s bold move",
@@ -815,38 +815,38 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "When fear shows up, you treat it as…",
+      text: "The Hat whispers: fear has arrived. How do you treat it?",
       answers: [
         {
-          label: "A signal to move anyway",
+          label: "As a reason to move anyway",
           scores: {
             gryffindor: 3,
             slytherin: 1,
           },
         },
         {
-          label: "One more variable in the plan",
+          label: "As one more factor in the plan",
           scores: {
             slytherin: 3,
             ravenclaw: 1,
           },
         },
         {
-          label: "A problem with a cause that can be named",
+          label: "As a puzzle I can name and solve",
           scores: {
             ravenclaw: 3,
             hufflepuff: 1,
           },
         },
         {
-          label: "Something faced together, not alone",
+          label: "As something we face together, not alone",
           scores: {
             hufflepuff: 3,
             gryffindor: 1,
           },
         },
         {
-          label: "Information that should change the next decision",
+          label: "As information that should change what I do next",
           scores: {
             ravenclaw: 3,
             slytherin: 1,
