@@ -81,7 +81,7 @@ function renderHome(): void {
     <main>
       <section class="hero">
         <h2>Pick a world. Get one answer.</h2>
-        <p>Each show and movie has its own test, its own characters, and its own scoring. A Friends result does not follow you to Hogwarts.</p>
+        <p>Each show and movie has its own test, its own characters, and its own scoring. An Office result does not follow you to Hogwarts.</p>
       </section>
 
       <section class="quiz-grid" aria-label="Available quizzes">

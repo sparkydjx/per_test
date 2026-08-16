@@ -5,7 +5,7 @@ export const parksAndRecreationQuiz: Quiz = {
   title: 'Parks and Recreation',
   world: 'Sitcom',
   tag: 'Who are you in Pawnee?',
-  summary: 'A separate test for the Parks Department. Your Friends and Office results do not transfer to City Hall.',
+  summary: 'A separate test for the Parks Department. Your Office result does not transfer to City Hall.',
   resultLabel: 'Pawnee needs you as',
   theme: {
     accent: '#6fbf73',

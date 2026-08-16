@@ -5,7 +5,7 @@ export const officeQuiz: Quiz = {
   title: 'The Office',
   world: 'Workplace',
   tag: 'Who are you at work?',
-  summary: 'A separate test for the Scranton branch. Your Friends result does not transfer to the annex.',
+  summary: 'A separate test for the Scranton branch. Your Parks result does not transfer to the annex.',
   resultLabel: 'You belong at',
   theme: {
     accent: '#7eb6ff',
