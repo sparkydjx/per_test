@@ -167,19 +167,6 @@ main {
   margin: 8px 0 0;
 }
 
-.install {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
-  background: linear-gradient(180deg, var(--accent-dim), var(--surface));
-}
-
-.install p {
-  margin-bottom: 0;
-}
-
 button {
   font: inherit;
   cursor: pointer;
@@ -187,7 +174,6 @@ button {
   border-radius: 12px;
 }
 
-#install,
 .primary {
   flex-shrink: 0;
   padding: 10px 16px;
@@ -203,7 +189,6 @@ button {
   border: 1px solid var(--border);
 }
 
-#install:hover,
 .primary:hover,
 .ghost:hover,
 .answer:hover,
@@ -363,11 +348,6 @@ button {
 }
 
 @media (max-width: 640px) {
-  .install {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
   .brand {
     flex-wrap: wrap;
   }

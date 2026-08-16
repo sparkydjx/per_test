@@ -79,14 +79,6 @@ function renderHome(): void {
       status: true,
     })}
     <main>
-      <section id="install-card" class="card install" hidden>
-        <div>
-          <h2>Install this app</h2>
-          <p>Keep every quiz on your home screen. They stay separate, even offline.</p>
-        </div>
-        <button id="install" type="button">Install</button>
-      </section>
-
       <section class="hero">
         <h2>Pick a world. Get one answer.</h2>
         <p>Each show and movie has its own test, its own characters, and its own scoring. A Friends result does not follow you to Hogwarts.</p>
@@ -100,8 +92,6 @@ function renderHome(): void {
   `
 
   bindPWA({
-    installCard: document.querySelector('#install-card'),
-    installButton: document.querySelector('#install'),
     statusEl: document.querySelector('#connection'),
     toastEl: document.querySelector('#toast'),
   })
