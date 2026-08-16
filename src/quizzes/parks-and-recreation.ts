@@ -123,5 +123,113 @@ export const parksAndRecreationQuiz: Quiz = {
         { label: 'Treat yo self.', scores: { donna: 3, tom: 1 } },
       ],
     },
+    {
+      text: 'A pit needs to become a park. You…',
+      answers: [
+        { label: 'Form a committee, a subcommittee, and a dream', scores: { leslie: 3, andy: 1 } },
+        { label: 'Fill it with dirt and walk away', scores: { ron: 3, april: 1 } },
+        { label: 'Suggest turning it into a haunted attraction', scores: { april: 3, tom: 1 } },
+        { label: 'Pitch sponsorships and a launch party', scores: { tom: 3, donna: 1 } },
+      ],
+    },
+    {
+      text: 'Breakfast food hierarchy, according to you:',
+      answers: [
+        { label: 'Waffles are a love language', scores: { leslie: 3, andy: 1 } },
+        { label: 'Eggs, bacon, and no conversation', scores: { ron: 3, donna: 1 } },
+        { label: 'Coffee. Maybe. Do not talk to me.', scores: { april: 3, ron: 1 } },
+        { label: 'Brunch is a lifestyle brand', scores: { donna: 3, tom: 1 } },
+      ],
+    },
+    {
+      text: 'Your ideal Pawnee festival role:',
+      answers: [
+        { label: 'Organizer, emcee, and emotional support', scores: { leslie: 3, andy: 1 } },
+        { label: 'Meat vendor. Cash only. No small talk.', scores: { ron: 3, donna: 1 } },
+        { label: 'Judgy spectator with a lemonade', scores: { april: 3, donna: 1 } },
+        { label: 'Merch table and VIP wristbands', scores: { tom: 3, andy: 1 } },
+      ],
+    },
+    {
+      text: 'Someone asks you to stay late. You…',
+      answers: [
+        { label: 'Yes. Also I brought snacks and a timeline.', scores: { leslie: 3, andy: 1 } },
+        { label: 'Absolutely not. My evenings are sacred.', scores: { ron: 3, donna: 1 } },
+        { label: 'Sure, if we can make it weird', scores: { april: 3, andy: 1 } },
+        { label: 'Only if there is a networking upside', scores: { tom: 3, donna: 1 } },
+      ],
+    },
+    {
+      text: 'How do you handle a bad idea in a meeting?',
+      answers: [
+        { label: 'Redirect it into something useful and kind', scores: { leslie: 3, donna: 1 } },
+        { label: 'Kill it with one sentence', scores: { ron: 3, april: 1 } },
+        { label: 'Make it worse until people see the point', scores: { april: 3, tom: 1 } },
+        { label: 'Rebrand it so I look visionary', scores: { tom: 3, donna: 1 } },
+      ],
+    },
+    {
+      text: 'Your love language at work is…',
+      answers: [
+        { label: 'Compliments, calendars, and thoughtful gifts', scores: { leslie: 3, andy: 1 } },
+        { label: 'Respectful silence and excellent tools', scores: { ron: 3, donna: 1 } },
+        { label: 'Shared hatred of something dumb', scores: { april: 3, ron: 1 } },
+        { label: 'Hyping people up and looking expensive', scores: { donna: 3, tom: 1 } },
+      ],
+    },
+    {
+      text: 'A celebrity visits Pawnee. You…',
+      answers: [
+        { label: 'Prepare a binder of local history and snacks', scores: { leslie: 3, andy: 1 } },
+        { label: 'Avoid them. Fame is a tax.', scores: { ron: 3, april: 1 } },
+        { label: 'Act unimpressed on purpose', scores: { april: 3, donna: 1 } },
+        { label: 'Get a photo for the brand and the feed', scores: { tom: 3, donna: 1 } },
+      ],
+    },
+    {
+      text: 'Your spirit animal in the department is…',
+      answers: [
+        { label: 'A golden retriever with a clipboard', scores: { leslie: 3, andy: 1 } },
+        { label: 'A bear that wants to be left alone', scores: { ron: 3, april: 1 } },
+        { label: 'A black cat judging the group chat', scores: { april: 3, donna: 1 } },
+        { label: 'A peacock with a business plan', scores: { tom: 3, donna: 1 } },
+      ],
+    },
+    {
+      text: 'Budget cuts hit Parks. Your reaction:',
+      answers: [
+        { label: 'Fight City Council with data and heart', scores: { leslie: 3, andy: 1 } },
+        { label: 'Celebrate. Smaller government wins.', scores: { ron: 3, april: 1 } },
+        { label: 'Suggest cutting the fun parts for the bit', scores: { april: 3, tom: 1 } },
+        { label: 'Protect the events that make us look good', scores: { donna: 3, tom: 1 } },
+      ],
+    },
+    {
+      text: 'After a long day, you recharge by…',
+      answers: [
+        { label: 'Planning tomorrow’s wins with a friend', scores: { leslie: 3, andy: 1 } },
+        { label: 'Wood, whiskey, and zero notifications', scores: { ron: 3, donna: 1 } },
+        { label: 'Watching something dark and refusing eye contact', scores: { april: 3, ron: 1 } },
+        { label: 'Dressing up and going somewhere nice', scores: { donna: 3, tom: 1 } },
+      ],
+    },
+    {
+      text: 'Someone doubts Pawnee. You…',
+      answers: [
+        { label: 'Deliver a passionate civic TED Talk', scores: { leslie: 3, andy: 1 } },
+        { label: 'Agree, then go fishing', scores: { ron: 3, april: 1 } },
+        { label: 'Defend it sarcastically, which still counts', scores: { april: 3, leslie: 1 } },
+        { label: 'Highlight the nightlife and the hustle', scores: { tom: 3, donna: 1 } },
+      ],
+    },
+    {
+      text: 'What do you want your Pawnee legacy to be?',
+      answers: [
+        { label: 'That I made this place better for people', scores: { leslie: 3, andy: 1 } },
+        { label: 'That I stayed true and unbothered', scores: { ron: 3, donna: 1 } },
+        { label: 'That I never sold out to sincerity… mostly', scores: { april: 3, ron: 1 } },
+        { label: 'That I lived well and looked better doing it', scores: { donna: 3, tom: 1 } },
+      ],
+    },
   ],
 }

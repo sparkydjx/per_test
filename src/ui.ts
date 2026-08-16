@@ -2,12 +2,14 @@ import { bindPWA, initPWA, showToast } from './pwa.ts'
 import { scoreQuiz } from './engine.ts'
 import { getQuiz, quizzes } from './quizzes/index.ts'
 import { go, hrefFor, parseRoute, type Route } from './router.ts'
+import { QUESTIONS_PER_ATTEMPT, prepareAttempt } from './session.ts'
 import {
   clearPicks,
+  loadAttempt,
   loadLastResult,
-  loadPicks,
+  saveAttempt,
   saveLastResult,
-  savePicks,
+  type QuizAttempt,
 } from './storage.ts'
 import type { Quiz, RankedMatch } from './types.ts'
 
@@ -36,24 +38,43 @@ function render(): void {
 
   applyTheme(quiz)
 
-  const picks = loadPicks(quiz.id)
+  const attempt = ensureAttempt(quiz)
+  const picks = attempt.picks
+  const activeQuiz: Quiz = { ...quiz, questions: attempt.questions }
+
   if (route.name === 'result') {
-    if (picks.length !== quiz.questions.length) {
+    if (picks.length !== activeQuiz.questions.length) {
       go({ name: 'quiz', quizId: quiz.id })
       return
     }
-    const ranked = scoreQuiz(quiz, picks)
+    const ranked = scoreQuiz(activeQuiz, picks)
     saveLastResult(quiz.id, ranked[0]?.name ?? '')
     renderResult(quiz, ranked)
     return
   }
 
-  if (picks.length >= quiz.questions.length) {
+  if (picks.length >= activeQuiz.questions.length) {
     go({ name: 'result', quizId: quiz.id })
     return
   }
 
-  renderQuiz(quiz, picks)
+  renderQuiz(activeQuiz, picks)
+}
+
+function ensureAttempt(quiz: Quiz): QuizAttempt {
+  const existing = loadAttempt(quiz.id)
+  if (
+    existing &&
+    existing.questions.length === QUESTIONS_PER_ATTEMPT &&
+    existing.picks.length <= existing.questions.length
+  ) {
+    return existing
+  }
+
+  const questions = prepareAttempt(quiz)
+  const attempt: QuizAttempt = { questions, picks: [] }
+  saveAttempt(quiz.id, attempt)
+  return attempt
 }
 
 function applyTheme(quiz: Quiz | null): void {
@@ -104,7 +125,7 @@ function quizCard(quiz: Quiz): string {
       <span class="quiz-card-tag">${escapeHtml(quiz.world)}</span>
       <h3>${escapeHtml(quiz.title)}</h3>
       <p>${escapeHtml(quiz.tag)}</p>
-      <p class="quiz-card-meta">${quiz.questions.length} questions · ${quiz.characters.length} results</p>
+      <p class="quiz-card-meta">${QUESTIONS_PER_ATTEMPT} questions · ${quiz.characters.length} results</p>
       ${last ? `<p class="quiz-card-last">Last result: ${escapeHtml(last)}</p>` : ''}
     </a>
   `
@@ -150,7 +171,11 @@ function renderQuiz(quiz: Quiz, picks: number[]): void {
     button.addEventListener('click', () => {
       const answerIndex = Number(button.dataset.answer)
       const nextPicks = [...picks, answerIndex]
-      savePicks(quiz.id, nextPicks)
+      const existing = loadAttempt(quiz.id)
+      saveAttempt(quiz.id, {
+        questions: existing?.questions ?? quiz.questions,
+        picks: nextPicks,
+      })
       if (nextPicks.length >= quiz.questions.length) {
         go({ name: 'result', quizId: quiz.id })
         return
