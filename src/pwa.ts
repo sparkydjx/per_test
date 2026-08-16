@@ -72,10 +72,11 @@ export function bindPWA(elements: {
 
 export function showToast(message: string): void {
   if (!toastEl) return
-  toastEl.textContent = message
-  toastEl.hidden = false
+  const toast = toastEl
+  toast.textContent = message
+  toast.hidden = false
   window.setTimeout(() => {
-    toastEl.hidden = true
+    toast.hidden = true
   }, 4000)
 }
 
