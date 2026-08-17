@@ -49,6 +49,24 @@ export const parksAndRecreationQuiz: Quiz = {
       role: "The standard",
       blurb: "You do not chase chaos. Chaos requests a meeting, gets declined, and receives a calendar hold for never. Taste is your boundary system. You know what you earned, what you will pay for, and what you will not explain. Weekends are sacred. Standards are non-negotiable. You can be warm without being available to every emotional emergency in the building. People come to you for polish, perspective, and the reminder that self-respect can look expensive. You celebrate hard, work clean, and refuse to shrink so other people can feel casual. Life is short. Your standards are not.",
     },
+    {
+      id: "chris",
+      name: "Chris Traeger",
+      role: "The optimist",
+      blurb: "You treat existence like a wellness retreat that also happens to include government. Energy is your default setting, gratitude is a verbal sport, and you can find the upside in a budget crisis before anyone else has sat down. People think the positivity is a bit. It is not. You mean every superlative, every high-five, every insistence that today can still be incredible. Health is a love language. Public service is a chance to help humans become their best, loudest selves. Your risk is steamrolling a room that needed quiet, not a pep talk. Your gift is making effort feel contagious. Literally. You will say that word. You will mean it.",
+    },
+    {
+      id: "ben",
+      name: "Ben Wyatt",
+      role: "The planner",
+      blurb: "You would rather fix the spreadsheet than perform the speech. Competence is how you care: budgets balanced, risks named, a three-phase plan that survives contact with Pawnee. You can be awkward in a doorway and surgical in a numbers meeting, sometimes in the same hour. Games, calzones, and very specific hobbies are not escapes so much as the places your brain gets to be delighted on purpose. People may miss the warmth because you lead with process. Give you a broken system and a quiet corner and you will rebuild it until it works. Your gift is making idealism operational. Your challenge is remembering you are allowed to want things that are not efficient.",
+    },
+    {
+      id: "ann",
+      name: "Ann Perkins",
+      role: "The grounded",
+      blurb: "You are the reasonable person in a town that treats reasonableness like optional DLC. Care shows up as practical help: a checkup, a ride, a calm voice when the binder people start vibrating. You love your friends hard and still want a life that is not a 14-hour civic adventure. People lean on you because you make chaos feel medically supervised. That is a gift and a trap. You can disappear into other people’s plots until your own wants look like a rumor. Your strength is staying human in rooms that reward spectacle. Your work is remembering that being the grounded one does not mean you owe the building your entire evening.",
+    },
   ],
   questions: [
     {
@@ -58,7 +76,7 @@ export const parksAndRecreationQuiz: Quiz = {
           label: "Start assigning roles before anyone asks",
           scores: {
             leslie: 3,
-            donna: 1,
+            chris: 1,
           },
         },
         {
@@ -69,24 +87,24 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Watch it unfold and narrate it dryly",
+          label: "Reframe it as a chance to be excellent and rally the room",
           scores: {
-            april: 3,
-            tom: 1,
+            chris: 3,
+            leslie: 1,
           },
         },
         {
-          label: "Scan the room for useful connections",
+          label: "Open a notes doc and stabilize the facts",
           scores: {
-            tom: 3,
-            donna: 1,
+            ben: 3,
+            ron: 1,
           },
         },
         {
           label: "Bring snacks and assume it will somehow be fine",
           scores: {
             andy: 3,
-            leslie: 1,
+            ann: 1,
           },
         },
       ],
@@ -95,10 +113,10 @@ export const parksAndRecreationQuiz: Quiz = {
       text: "You have a free Saturday in town. How do you spend it?",
       answers: [
         {
-          label: "Volunteer for something that helps the town",
+          label: "Turn hangouts into an accidental all-day event",
           scores: {
-            leslie: 3,
-            andy: 1,
+            andy: 3,
+            tom: 1,
           },
         },
         {
@@ -116,17 +134,17 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Turn hangouts into an accidental all-day event",
+          label: "A long run, a salad, and a sincere recap of how great it was",
           scores: {
-            andy: 3,
-            tom: 1,
+            chris: 3,
+            leslie: 1,
           },
         },
         {
-          label: "Book something polished and refuse to apologize for the cost",
+          label: "Errands, rest, and one plan that will not become a parade",
           scores: {
-            donna: 3,
-            tom: 1,
+            ann: 3,
+            donna: 1,
           },
         },
       ],
@@ -135,17 +153,10 @@ export const parksAndRecreationQuiz: Quiz = {
       text: "Look at your desk. What does it usually look like?",
       answers: [
         {
-          label: "Personal, optimistic, and a little overcrowded with meaning",
+          label: "A mix of toys, snacks, and unexplained optimism",
           scores: {
-            leslie: 3,
-            andy: 1,
-          },
-        },
-        {
-          label: "Sparse, practical, and slightly intimidating",
-          scores: {
-            ron: 3,
-            april: 1,
+            andy: 3,
+            leslie: 1,
           },
         },
         {
@@ -156,6 +167,13 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
+          label: "Functional, a little personal, and not a shrine to the job",
+          scores: {
+            ann: 3,
+            leslie: 1,
+          },
+        },
+        {
           label: "Polished, branded, and ready for visitors",
           scores: {
             tom: 3,
@@ -163,10 +181,10 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "A mix of toys, snacks, and unexplained optimism",
+          label: "Color-coded files, a budget printout, and one embarrassing hobby",
           scores: {
-            andy: 3,
-            leslie: 1,
+            ben: 3,
+            ron: 1,
           },
         },
       ],
@@ -182,10 +200,10 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Offer one honest sentence and space",
+          label: "Remind them of their worth, then insist on a reset",
           scores: {
-            ron: 3,
-            donna: 1,
+            donna: 3,
+            tom: 1,
           },
         },
         {
@@ -196,17 +214,17 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Remind them of their worth, then insist on a reset",
+          label: "Deliver a pep talk that could power a small city",
           scores: {
-            donna: 3,
-            tom: 1,
+            chris: 3,
+            leslie: 1,
           },
         },
         {
-          label: "Take them somewhere nice and reset the night",
+          label: "Show up, listen, and handle the practical care",
           scores: {
-            donna: 3,
-            tom: 1,
+            ann: 3,
+            leslie: 1,
           },
         },
       ],
@@ -215,10 +233,10 @@ export const parksAndRecreationQuiz: Quiz = {
       text: "How do you usually handle your actual assigned work?",
       answers: [
         {
-          label: "Overdeliver because the mission feels personal",
+          label: "Do it clean, then protect the rest of your day",
           scores: {
-            leslie: 3,
-            donna: 1,
+            donna: 3,
+            tom: 1,
           },
         },
         {
@@ -243,9 +261,9 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Show up big, even if the details are fuzzy",
+          label: "Build the system that makes the work boringly reliable",
           scores: {
-            andy: 3,
+            ben: 3,
             leslie: 1,
           },
         },
@@ -255,10 +273,10 @@ export const parksAndRecreationQuiz: Quiz = {
       text: "A town hall meeting gets angry. What do you do?",
       answers: [
         {
-          label: "Win the room with preparation and sincerity",
+          label: "Steer attention toward the social upside afterward",
           scores: {
-            leslie: 3,
-            tom: 1,
+            tom: 3,
+            andy: 1,
           },
         },
         {
@@ -269,24 +287,24 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Say something unhelpful on purpose",
+          label: "Try to keep people loose even if the plan is fuzzy",
           scores: {
-            april: 3,
-            andy: 1,
+            andy: 3,
+            tom: 1,
           },
         },
         {
-          label: "Steer attention toward the social upside afterward",
+          label: "Flood the room with gratitude and facts until the mood turns",
           scores: {
-            tom: 3,
-            andy: 1,
+            chris: 3,
+            leslie: 1,
           },
         },
         {
-          label: "Look for the branding opportunity in the noise",
+          label: "Present charts like they are a calming spell",
           scores: {
-            tom: 3,
-            donna: 1,
+            ben: 3,
+            leslie: 1,
           },
         },
       ],
@@ -335,10 +353,10 @@ export const parksAndRecreationQuiz: Quiz = {
       text: "Which motto actually matches how you live your week?",
       answers: [
         {
-          label: "Aim high and mean it",
+          label: "Invest in yourself without apology",
           scores: {
-            leslie: 3,
-            andy: 1,
+            tom: 3,
+            donna: 1,
           },
         },
         {
@@ -349,24 +367,24 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Appear unbothered while staying quietly invested",
+          label: "Keep your people close and your drama small",
           scores: {
-            april: 3,
+            ann: 3,
             ron: 1,
-          },
-        },
-        {
-          label: "Invest in yourself without apology",
-          scores: {
-            donna: 3,
-            tom: 1,
           },
         },
         {
           label: "Protect your standards and your weekends",
           scores: {
             donna: 3,
-            ron: 1,
+            tom: 1,
+          },
+        },
+        {
+          label: "Every day can be the best day if you insist",
+          scores: {
+            chris: 3,
+            leslie: 1,
           },
         },
       ],
@@ -382,10 +400,10 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Solve it simply and walk away",
+          label: "Volunteer for the fun part and learn on the way",
           scores: {
-            ron: 3,
-            april: 1,
+            andy: 3,
+            leslie: 1,
           },
         },
         {
@@ -403,9 +421,9 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Volunteer for the fun part and learn on the way",
+          label: "A phased proposal with costs, risks, and a quiet park",
           scores: {
-            andy: 3,
+            ben: 3,
             leslie: 1,
           },
         },
@@ -415,10 +433,10 @@ export const parksAndRecreationQuiz: Quiz = {
       text: "What matters most to you about breakfast or morning fuel?",
       answers: [
         {
-          label: "Comfort food that feels like affection",
+          label: "Whatever feels luxurious enough to count as self-respect",
           scores: {
-            leslie: 3,
-            andy: 1,
+            donna: 3,
+            tom: 1,
           },
         },
         {
@@ -429,24 +447,24 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Caffeine and a hard boundary around small talk",
+          label: "Whatever is around and tastes like a good time",
           scores: {
-            april: 3,
+            andy: 3,
+            leslie: 1,
+          },
+        },
+        {
+          label: "Something optimized, measured, and described as incredible",
+          scores: {
+            chris: 3,
+            donna: 1,
+          },
+        },
+        {
+          label: "Whatever is actually good for you, eaten in peace",
+          scores: {
+            ann: 3,
             ron: 1,
-          },
-        },
-        {
-          label: "A meal that doubles as a lifestyle statement",
-          scores: {
-            donna: 3,
-            tom: 1,
-          },
-        },
-        {
-          label: "Whatever feels luxurious enough to count as self-respect",
-          scores: {
-            donna: 3,
-            tom: 1,
           },
         },
       ],
@@ -462,10 +480,10 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "The quiet vendor who wants cash and silence",
+          label: "The polished guest who will not sit in the dirt",
           scores: {
-            ron: 3,
-            donna: 1,
+            donna: 3,
+            tom: 1,
           },
         },
         {
@@ -483,10 +501,10 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "The person making introductions and collecting contacts",
+          label: "Unofficial emcee energy, high-fives included",
           scores: {
-            tom: 3,
-            donna: 1,
+            chris: 3,
+            leslie: 1,
           },
         },
       ],
@@ -495,16 +513,9 @@ export const parksAndRecreationQuiz: Quiz = {
       text: "Someone asks you to stay late. What do you say?",
       answers: [
         {
-          label: "Say yes and arrive with a plan already forming",
+          label: "Agree if there is a visible upside for you",
           scores: {
-            leslie: 3,
-            andy: 1,
-          },
-        },
-        {
-          label: "Decline; evenings are non-negotiable",
-          scores: {
-            ron: 3,
+            tom: 3,
             donna: 1,
           },
         },
@@ -516,17 +527,24 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Agree if there is a visible upside for you",
+          label: "Stay late and suggest a sunrise follow-up jog",
           scores: {
-            tom: 3,
-            donna: 1,
+            chris: 3,
+            leslie: 1,
           },
         },
         {
-          label: "Only if the request respects your time",
+          label: "Stay if the deliverable is defined; no if it is theater",
           scores: {
-            donna: 3,
+            ben: 3,
             ron: 1,
+          },
+        },
+        {
+          label: "Help for an hour, then protect the rest of the night",
+          scores: {
+            ann: 3,
+            donna: 1,
           },
         },
       ],
@@ -535,10 +553,10 @@ export const parksAndRecreationQuiz: Quiz = {
       text: "A bad idea comes up in a meeting. How do you handle it?",
       answers: [
         {
-          label: "Redirect it into something useful without crushing anyone",
+          label: "Support whoever seems most excited about it",
           scores: {
-            leslie: 3,
-            donna: 1,
+            andy: 3,
+            leslie: 1,
           },
         },
         {
@@ -549,10 +567,10 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Exaggerate it until the absurdity is obvious",
+          label: "Say the kind thing, then the true thing",
           scores: {
-            april: 3,
-            tom: 1,
+            ann: 3,
+            leslie: 1,
           },
         },
         {
@@ -563,10 +581,10 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Support whoever seems most excited about it",
+          label: "Ask for the numbers until it collapses or improves",
           scores: {
-            andy: 3,
-            leslie: 1,
+            ben: 3,
+            ron: 1,
           },
         },
       ],
@@ -582,10 +600,10 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Quiet respect and excellent tools",
+          label: "Tasteful gifts and zero tolerance for cheapness",
           scores: {
-            ron: 3,
-            donna: 1,
+            donna: 3,
+            tom: 1,
           },
         },
         {
@@ -596,17 +614,17 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Hype, polish, and high standards for appearance",
+          label: "Public praise and a wellness plan they did not request",
           scores: {
-            donna: 3,
-            tom: 1,
+            chris: 3,
+            leslie: 1,
           },
         },
         {
-          label: "Tasteful gifts and zero tolerance for cheapness",
+          label: "Practical help — water, a ride, a checkup",
           scores: {
-            donna: 3,
-            tom: 1,
+            ann: 3,
+            andy: 1,
           },
         },
       ],
@@ -615,10 +633,10 @@ export const parksAndRecreationQuiz: Quiz = {
       text: "A celebrity visits your town. What do you do?",
       answers: [
         {
-          label: "Overprepare with local context and hospitality",
+          label: "Ask for an autograph like it is a personal quest",
           scores: {
-            leslie: 3,
-            andy: 1,
+            andy: 3,
+            tom: 1,
           },
         },
         {
@@ -629,24 +647,24 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Act deliberately unimpressed",
+          label: "Be polite, keep it short, go back to work",
           scores: {
-            april: 3,
+            ann: 3,
             donna: 1,
           },
         },
         {
-          label: "Secure a photo and a story you can use later",
+          label: "Treat them like a new best friend and a public-health ambassador",
           scores: {
-            tom: 3,
-            donna: 1,
+            chris: 3,
+            leslie: 1,
           },
         },
         {
-          label: "Ask for an autograph like it is a personal quest",
+          label: "Hand over a briefing memo, then hover near the wall",
           scores: {
-            andy: 3,
-            tom: 1,
+            ben: 3,
+            leslie: 1,
           },
         },
       ],
@@ -662,13 +680,6 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Independent, private, and hard to impress",
-          scores: {
-            ron: 3,
-            april: 1,
-          },
-        },
-        {
           label: "Observant, sarcastic, and selectively soft",
           scores: {
             april: 3,
@@ -676,10 +687,17 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Ambitious, stylish, and always pitching",
+          label: "Upbeat, athletic, and sincerely extra",
           scores: {
-            tom: 3,
-            donna: 1,
+            chris: 3,
+            leslie: 1,
+          },
+        },
+        {
+          label: "Prepared, precise, and a little awkward",
+          scores: {
+            ben: 3,
+            ron: 1,
           },
         },
         {
@@ -702,30 +720,30 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Welcome the reduction in bureaucracy",
-          scores: {
-            ron: 3,
-            april: 1,
-          },
-        },
-        {
-          label: "Suggest cutting the cheerful parts first, for the bit",
-          scores: {
-            april: 3,
-            tom: 1,
-          },
-        },
-        {
           label: "Protect the events that keep the image strong",
           scores: {
-            donna: 3,
-            tom: 1,
+            tom: 3,
+            donna: 1,
           },
         },
         {
-          label: "Offer to help somehow, even without a plan",
+          label: "Rebuild the numbers until the core still works",
           scores: {
-            andy: 3,
+            ben: 3,
+            ron: 1,
+          },
+        },
+        {
+          label: "Sell the remaining work as a thrilling challenge",
+          scores: {
+            chris: 3,
+            leslie: 1,
+          },
+        },
+        {
+          label: "Guard the parts that actually help people",
+          scores: {
+            ann: 3,
             leslie: 1,
           },
         },
@@ -735,13 +753,6 @@ export const parksAndRecreationQuiz: Quiz = {
       text: "After a long day, how do you recharge?",
       answers: [
         {
-          label: "Planning tomorrow with someone who shares the mission",
-          scores: {
-            leslie: 3,
-            andy: 1,
-          },
-        },
-        {
           label: "Hands-on solitude and no notifications",
           scores: {
             ron: 3,
@@ -749,10 +760,10 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Something dark, quiet, and socially unavailable",
+          label: "Call friends and turn it into a hang",
           scores: {
-            april: 3,
-            ron: 1,
+            andy: 3,
+            tom: 1,
           },
         },
         {
@@ -763,10 +774,17 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "A curated night out that costs what it costs",
+          label: "A quiet night with a complicated game",
           scores: {
-            donna: 3,
-            tom: 1,
+            ben: 3,
+            ron: 1,
+          },
+        },
+        {
+          label: "Home, food, and absolutely no additional plot",
+          scores: {
+            ann: 3,
+            ron: 1,
           },
         },
       ],
@@ -782,16 +800,9 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Agree lightly, then go do your own thing",
+          label: "Defend it with volume, loyalty, and zero research",
           scores: {
-            ron: 3,
-            april: 1,
-          },
-        },
-        {
-          label: "Defend it sideways, through sarcasm",
-          scores: {
-            april: 3,
+            andy: 3,
             leslie: 1,
           },
         },
@@ -803,10 +814,17 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Pitch its best scenes like a brochure",
+          label: "Defend it sideways, through sarcasm",
           scores: {
-            tom: 3,
-            donna: 1,
+            april: 3,
+            leslie: 1,
+          },
+        },
+        {
+          label: "Defend the people you take care of there",
+          scores: {
+            ann: 3,
+            leslie: 1,
           },
         },
       ],
@@ -822,13 +840,6 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Staying true without needing applause",
-          scores: {
-            ron: 3,
-            donna: 1,
-          },
-        },
-        {
           label: "Never becoming fake, even when you cared",
           scores: {
             april: 3,
@@ -836,17 +847,24 @@ export const parksAndRecreationQuiz: Quiz = {
           },
         },
         {
-          label: "Living well and looking like you meant it",
+          label: "Having lived well without shrinking for anyone",
           scores: {
             donna: 3,
             tom: 1,
           },
         },
         {
-          label: "Having lived well without shrinking for anyone",
+          label: "Quiet institutions that actually work",
           scores: {
-            donna: 3,
-            tom: 1,
+            ben: 3,
+            ron: 1,
+          },
+        },
+        {
+          label: "A life that was yours, not just everyone else’s emergency",
+          scores: {
+            ann: 3,
+            leslie: 1,
           },
         },
       ],
