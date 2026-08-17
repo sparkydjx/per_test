@@ -132,6 +132,14 @@ function quizCard(quiz: Quiz): string {
   `
 }
 
+function persistPicks(quiz: Quiz, picks: number[]): void {
+  const existing = loadAttempt(quiz.id)
+  saveAttempt(quiz.id, {
+    questions: existing?.questions ?? quiz.questions,
+    picks,
+  })
+}
+
 function renderQuiz(quiz: Quiz, picks: number[]): void {
   const index = picks.length
   const question = quiz.questions[index]
@@ -140,6 +148,7 @@ function renderQuiz(quiz: Quiz, picks: number[]): void {
   const step = index + 1
   const total = quiz.questions.length
   const percent = Math.round((index / total) * 100)
+  const canGoBack = index > 0
 
   app.innerHTML = `
     ${shell({
@@ -164,6 +173,13 @@ function renderQuiz(quiz: Quiz, picks: number[]): void {
             )
             .join('')}
         </div>
+        ${
+          canGoBack
+            ? `<div class="quiz-nav">
+          <button type="button" class="ghost" id="previous-question">Previous question</button>
+        </div>`
+            : ''
+        }
       </section>
     </main>
   `
@@ -172,17 +188,20 @@ function renderQuiz(quiz: Quiz, picks: number[]): void {
     button.addEventListener('click', () => {
       const answerIndex = Number(button.dataset.answer)
       const nextPicks = [...picks, answerIndex]
-      const existing = loadAttempt(quiz.id)
-      saveAttempt(quiz.id, {
-        questions: existing?.questions ?? quiz.questions,
-        picks: nextPicks,
-      })
+      persistPicks(quiz, nextPicks)
       if (nextPicks.length >= quiz.questions.length) {
         go({ name: 'result', quizId: quiz.id })
         return
       }
       renderQuiz(quiz, nextPicks)
     })
+  })
+
+  document.querySelector('#previous-question')?.addEventListener('click', () => {
+    if (!canGoBack) return
+    const previousPicks = picks.slice(0, -1)
+    persistPicks(quiz, previousPicks)
+    renderQuiz(quiz, previousPicks)
   })
 }
 
