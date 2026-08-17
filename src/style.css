@@ -103,18 +103,23 @@ a {
 .back {
   display: inline-flex;
   align-items: center;
-  padding: 8px 12px;
-  border: 1px solid var(--border);
+  padding: 12px 18px;
+  border: 1px solid transparent;
   border-radius: 999px;
-  background: var(--surface);
-  color: var(--text);
+  background: var(--quiz-accent);
+  color: var(--quiz-accent-text);
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
   white-space: nowrap;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--quiz-accent) 55%, transparent);
 }
 
-.back:hover {
-  border-color: var(--quiz-accent);
+.back:hover,
+.back:focus-visible {
+  filter: brightness(1.1);
+  outline: none;
 }
 
 .status {
@@ -270,6 +275,17 @@ button {
 .answer:focus-visible {
   border-color: var(--quiz-accent);
   outline: none;
+}
+
+.quiz-nav {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.quiz-nav .ghost {
+  width: 100%;
+  max-width: 220px;
 }
 
 .result-hero {
