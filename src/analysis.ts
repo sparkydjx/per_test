@@ -6,6 +6,7 @@ const DUAL_ANALYSIS_QUIZ_IDS = new Set([
   'star-wars',
   'battle-for-dream-island',
   'sonic-the-hedgehog',
+  'dandys-world',
 ])
 
 export function usesDualAnalysis(quizId: string): boolean {

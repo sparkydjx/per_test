@@ -1,5 +1,6 @@
 import type { Quiz } from '../types.ts'
 import { battleForDreamIslandQuiz } from './battle-for-dream-island.ts'
+import { dandysWorldQuiz } from './dandys-world.ts'
 import { harryPotterQuiz } from './harry-potter.ts'
 import { officeQuiz } from './office.ts'
 import { parksAndRecreationQuiz } from './parks-and-recreation.ts'
@@ -14,6 +15,7 @@ export const quizzes: Quiz[] = [
   harryPotterQuiz,
   starWarsQuiz,
   sonicTheHedgehogQuiz,
+  dandysWorldQuiz,
 ]
 
 export function getQuiz(id: string): Quiz | undefined {
