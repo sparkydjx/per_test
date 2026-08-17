@@ -1,6 +1,7 @@
 import type { Quiz } from '../types.ts'
 import { battleForDreamIslandQuiz } from './battle-for-dream-island.ts'
 import { dandysWorldQuiz } from './dandys-world.ts'
+import { everybodyLovesRaymondQuiz } from './everybody-loves-raymond.ts'
 import { harryPotterQuiz } from './harry-potter.ts'
 import { officeQuiz } from './office.ts'
 import { parksAndRecreationQuiz } from './parks-and-recreation.ts'
@@ -11,6 +12,7 @@ import { starWarsQuiz } from './star-wars.ts'
 export const quizzes: Quiz[] = [
   officeQuiz,
   parksAndRecreationQuiz,
+  everybodyLovesRaymondQuiz,
   battleForDreamIslandQuiz,
   harryPotterQuiz,
   starWarsQuiz,
