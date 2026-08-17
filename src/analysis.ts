@@ -3,6 +3,7 @@ import type { Quiz, RankedMatch } from './types.ts'
 const DUAL_ANALYSIS_QUIZ_IDS = new Set([
   'office',
   'parks-and-recreation',
+  'everybody-loves-raymond',
   'star-wars',
   'battle-for-dream-island',
   'sonic-the-hedgehog',
