@@ -4,6 +4,7 @@ import { scoreQuiz } from './engine.ts'
 import { getQuiz, quizzes } from './quizzes/index.ts'
 import { go, hrefFor, parseRoute, type Route } from './router.ts'
 import { QUESTIONS_PER_ATTEMPT, prepareAttempt } from './session.ts'
+import { buildResultSharePdf, resultPdfFilename, shareOrDownloadPdf } from './share.ts'
 import {
   clearPicks,
   loadAttempt,
@@ -226,20 +227,25 @@ function renderResult(quiz: Quiz, ranked: RankedMatch[]): void {
     })}
     <main class="result-main">
       <section class="card result-hero">
-        <p class="eyebrow">${escapeHtml(quiz.resultLabel)}</p>
-        <h2>${escapeHtml(winner.name)}</h2>
-        <p class="result-role">${escapeHtml(winner.role)} · ${winner.percent}%</p>
-        ${secondaryLine}
-        <p class="result-profile-label">${profileLabel}</p>
+        <p class="print-only result-print-title">${escapeHtml(quiz.title)}</p>
+        <div class="result-hero-meta no-print">
+          <p class="eyebrow">${escapeHtml(quiz.resultLabel)}</p>
+          <h2>${escapeHtml(winner.name)}</h2>
+          <p class="result-role">${escapeHtml(winner.role)} · ${winner.percent}%</p>
+          ${secondaryLine}
+        </div>
+        <p class="result-profile-label no-print">${profileLabel}</p>
+        <p class="print-only result-print-label">Summary</p>
         <p class="result-blurb">${escapeHtml(analysis)}</p>
-        <div class="result-actions">
+        <div class="result-actions no-print">
           <button type="button" class="primary" id="retake">Retake this quiz</button>
           <button type="button" class="ghost" id="share">Share result</button>
         </div>
       </section>
-      <section class="card">
-        <h2>The rest of the split</h2>
-        <p>Only this quiz’s answers count here.</p>
+      <section class="card result-split">
+        <h2 class="no-print">The rest of the split</h2>
+        <p class="no-print">Only this quiz’s answers count here.</p>
+        <p class="print-only result-print-label">Match split</p>
         <ul class="split">
           ${ranked
             .map(
@@ -269,7 +275,7 @@ function renderResult(quiz: Quiz, ranked: RankedMatch[]): void {
   })
 
   document.querySelector('#share')?.addEventListener('click', () => {
-    void shareResult(quiz, winner, runnerUp)
+    void shareResult(quiz, ranked)
   })
 }
 
@@ -313,30 +319,27 @@ function shell(options: {
   `
 }
 
-async function shareResult(
-  quiz: Quiz,
-  winner: RankedMatch,
-  runnerUp?: RankedMatch,
-): Promise<void> {
-  const text =
-    usesDualAnalysis(quiz.id) && runnerUp
-      ? `I got ${winner.name} (with a lean toward ${runnerUp.name}) on the ${quiz.title} test in Per Test.`
-      : `I got ${winner.name} on the ${quiz.title} test in Per Test.`
-  const url = window.location.href
-  try {
-    if (navigator.share) {
-      await navigator.share({ title: quiz.title, text, url })
-      return
-    }
-  } catch {
-    // User cancelled share, or the browser rejected it.
+async function shareResult(quiz: Quiz, ranked: RankedMatch[]): Promise<void> {
+  const shareButton = document.querySelector<HTMLButtonElement>('#share')
+  if (shareButton) {
+    shareButton.disabled = true
+    shareButton.textContent = 'Preparing PDF…'
   }
 
   try {
-    await navigator.clipboard.writeText(`${text} ${url}`)
-    showToast('Result copied')
+    const analysis = buildResultAnalysis(quiz, ranked)
+    const blob = await buildResultSharePdf({ quiz, analysis, ranked })
+    const file = new File([blob], resultPdfFilename(quiz), { type: 'application/pdf' })
+    const outcome = await shareOrDownloadPdf(file, `${quiz.title} result`)
+    if (outcome === 'downloaded') showToast('Result PDF downloaded')
+    if (outcome === 'failed') showToast('Could not share this result')
   } catch {
     showToast('Could not share this result')
+  } finally {
+    if (shareButton) {
+      shareButton.disabled = false
+      shareButton.textContent = 'Share result'
+    }
   }
 }
 
