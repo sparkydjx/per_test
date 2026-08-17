@@ -1,4 +1,5 @@
 import { bindPWA, initPWA, showToast } from './pwa.ts'
+import { buildResultAnalysis, usesDualAnalysis } from './analysis.ts'
 import { scoreQuiz } from './engine.ts'
 import { getQuiz, quizzes } from './quizzes/index.ts'
 import { go, hrefFor, parseRoute, type Route } from './router.ts'
@@ -189,6 +190,15 @@ function renderResult(quiz: Quiz, ranked: RankedMatch[]): void {
   const winner = ranked[0]
   if (!winner) return
 
+  const runnerUp = ranked[1]
+  const dual = usesDualAnalysis(quiz.id) && Boolean(runnerUp)
+  const analysis = buildResultAnalysis(quiz, ranked)
+  const profileLabel = dual ? 'Your mix' : 'Your profile'
+  const secondaryLine =
+    dual && runnerUp
+      ? `<p class="result-secondary">Also showing up: <strong>${escapeHtml(runnerUp.name)}</strong> · ${runnerUp.percent}% · ${escapeHtml(runnerUp.role)}</p>`
+      : ''
+
   app.innerHTML = `
     ${shell({
       eyebrow: quiz.world,
@@ -200,8 +210,9 @@ function renderResult(quiz: Quiz, ranked: RankedMatch[]): void {
         <p class="eyebrow">${escapeHtml(quiz.resultLabel)}</p>
         <h2>${escapeHtml(winner.name)}</h2>
         <p class="result-role">${escapeHtml(winner.role)} · ${winner.percent}%</p>
-        <p class="result-profile-label">Your profile</p>
-        <p class="result-blurb">${escapeHtml(winner.blurb)}</p>
+        ${secondaryLine}
+        <p class="result-profile-label">${profileLabel}</p>
+        <p class="result-blurb">${escapeHtml(analysis)}</p>
         <div class="result-actions">
           <button type="button" class="primary" id="retake">Retake this quiz</button>
           <button type="button" class="ghost" id="share">Share result</button>
@@ -239,7 +250,7 @@ function renderResult(quiz: Quiz, ranked: RankedMatch[]): void {
   })
 
   document.querySelector('#share')?.addEventListener('click', () => {
-    void shareResult(quiz, winner)
+    void shareResult(quiz, winner, runnerUp)
   })
 }
 
@@ -283,8 +294,15 @@ function shell(options: {
   `
 }
 
-async function shareResult(quiz: Quiz, winner: RankedMatch): Promise<void> {
-  const text = `I got ${winner.name} on the ${quiz.title} test in Per Test.`
+async function shareResult(
+  quiz: Quiz,
+  winner: RankedMatch,
+  runnerUp?: RankedMatch,
+): Promise<void> {
+  const text =
+    usesDualAnalysis(quiz.id) && runnerUp
+      ? `I got ${winner.name} (with a lean toward ${runnerUp.name}) on the ${quiz.title} test in Per Test.`
+      : `I got ${winner.name} on the ${quiz.title} test in Per Test.`
   const url = window.location.href
   try {
     if (navigator.share) {

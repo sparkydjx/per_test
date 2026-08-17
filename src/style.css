@@ -301,6 +301,17 @@ button {
   color: var(--muted);
 }
 
+.result-secondary {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.result-secondary strong {
+  color: var(--text);
+  font-weight: 650;
+}
+
 .result-actions {
   display: flex;
   flex-wrap: wrap;
