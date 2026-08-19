@@ -81,7 +81,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "Tell me truly — when there is not enough to go around, what do you protect first?",
+      text: "The Sorting Hat asks: when there is not enough for everyone, what do you guard first?",
       answers: [
         {
           label: "The people who would do the same for you",
