@@ -325,7 +325,7 @@ export const harryPotterQuiz: Quiz = {
       ],
     },
     {
-      text: "Dumbledore leans in: why would you go help at midnight if the castle needed you?",
+      text: "Dumbledore leans in: the castle needs you at midnight. Why do you go?",
       answers: [
         {
           label: "If not you, then who?",
